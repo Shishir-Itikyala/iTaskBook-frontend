@@ -10,7 +10,7 @@ const AddNote = (props) => {
     console.log("Submitted");
     e.preventDefault();
     addNote(note.title, note.description, note.duedate);
-    props.showAlert("Note added successfully", "success");
+    props.showAlert("Task added successfully", "success");
     setNote({ title: "", description: "", duedate: "" });
   }
 
