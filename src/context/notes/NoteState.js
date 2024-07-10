@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import NoteContext from "./noteContext";
 
 const NoteState = (props) => {
-  const host = "http://localhost:5000";
+  const host = "https://itaskbook-backend.onrender.com";
   const initialNotes = [];
   const getNotes = async () => {
     const response = await fetch(`${host}/api/notes/fetchallnotes/`, {
